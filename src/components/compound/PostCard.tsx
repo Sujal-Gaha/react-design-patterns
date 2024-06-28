@@ -21,7 +21,7 @@ type PostCardProps = PropsWithChildren & {
   post: TPost;
 };
 
-const PostCard = ({ post, children }: PostCardProps) => {
+const PostCard = ({ children, post }: PostCardProps) => {
   return (
     <PostCardContext.Provider value={{ post }}>
       <div className="h-fit w-fit p-4 flex flex-col gap-2 rounded-md bg-neutral-800 text-white">
