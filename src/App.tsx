@@ -2,6 +2,8 @@ import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomeFeed from "./pages/HomeFeed";
 import Counter from "./pages/Counter";
+import PostFeed from "./pages/PostFeed";
+import Post from "./pages/Post";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
   {
     path: "/counter",
     element: <Counter />,
+  },
+  {
+    path: "/posts",
+    element: <PostFeed />,
+  },
+  {
+    path: "/posts/:id",
+    element: <Post />,
   },
 ]);
 
